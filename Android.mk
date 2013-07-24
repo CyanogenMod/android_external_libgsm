@@ -25,6 +25,7 @@ LOCAL_SRC_FILES := \
 	src/gsm_decode.c \
 	src/gsm_destroy.c \
 	src/gsm_encode.c \
+	src/gsm_option.c \
 	src/long_term.c \
 	src/lpc.c \
 	src/preprocess.c \
@@ -32,7 +33,7 @@ LOCAL_SRC_FILES := \
 	src/short_term.c \
 	src/table.c
 
-LOCAL_CFLAGS := -DSASR
+LOCAL_CFLAGS := -DSASR -DWAV49
 
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/inc
 
